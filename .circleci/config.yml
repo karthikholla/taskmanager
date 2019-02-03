@@ -15,10 +15,10 @@ jobs:
           command: 'mvn test'
       - run:
           name: Build web app
-          command: 'mvn clean install -Pweb; mvn eclipse:clean eclipse:eclipse -Pweb'
+          command: 'mvn clean install -Pweb && mvn eclipse:clean eclipse:eclipse -Pweb'
       - run:
           name: Build scheduler app
-          command: 'mvn clean install -Pscheduler; mvn eclipse:clean eclipse:eclipse -Pscheduler'
+          command: 'mvn clean install -Pscheduler && mvn eclipse:clean eclipse:eclipse -Pscheduler'
       - store_artifacts:
           path: endpoints-0.1.jar
       - store_artifacts:

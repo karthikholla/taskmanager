@@ -1,9 +1,11 @@
 ## Install on Mac
+```
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.33.1/minikube-darwin-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+```
 
 ## Deploy the clusters
 
-# Syntax
+### Syntax
 
 kubectl create -f <deployment.yml>
 
